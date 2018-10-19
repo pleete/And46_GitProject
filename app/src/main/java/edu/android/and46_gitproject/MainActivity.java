@@ -19,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("Hello, 안드로이드!");
 
         Button btn = findViewById(R.id.button);
-        btn.setOnClickListener(null);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                return;
+            }
+        });
 
 
     }
